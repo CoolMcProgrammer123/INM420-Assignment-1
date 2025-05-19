@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Debug Outlines */
 * {
-    /* outline: 1px dashed rgba(255, 0, 0, 0.5); */
+    outline: 1px dashed rgba(255, 0, 0, 0.5);
 }
 
+/* Text Defaults */
 h1 {
     font-family: Inter;
     font-weight: 800;
@@ -33,12 +35,22 @@ h3 {
     vertical-align: bottom;
 }
 
+p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #2D3436;
+}
+
 body {
     background-color: white;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
 }
 
+/* Header */
 header {
     display: flex;
     align-items: center;
@@ -51,6 +63,7 @@ header {
     box-shadow: 0px 4px 8px 0px #26323814, 0px 2px 4px 0px #26323829;
 }
 
+/* Website Logo */
 header div {
     display: flex;
     align-items: center;
@@ -59,6 +72,7 @@ header div {
     padding: 0 18px;
 }
 
+/* Sign In Button */
 header button {
     border: none;
     width: 170px;
@@ -80,6 +94,7 @@ header button p {
     text-shadow: 0px 4px 8px #26323814, 0px 2px 4px #26323829;
 }
 
+/* Nav Bar */
 header nav {
     display: flex;
     align-items: center;
@@ -87,6 +102,7 @@ header nav {
     height: 64px;
 }
 
+/* Nav links */
 nav a {
     text-decoration: none;
     font-family: Inter;
@@ -100,6 +116,7 @@ nav a {
     width: 150px;
 }
 
+/* Decorative dots in nav bar */
 nav p {
     font-family: Inter;
     font-weight: 700;
@@ -112,6 +129,7 @@ nav p {
     user-select: none;
 }
 
+/* Class for highlighting nav bar text */
 .section-focused-text {
     font-family: Inter;
     font-weight: 700;
@@ -123,12 +141,14 @@ nav p {
     color: #2D3436;
 }
 
+/* Main Body Section */
 .section-box {
     display: flex;
     flex-direction: column;
     height: 500px;
 }
 
+/* Main Body Section? */
 #how-it-works {
     margin: 80px auto;
     align-items: center;
@@ -139,6 +159,7 @@ nav p {
     text-shadow: 0px 4px 0px #FFFFFF;
 }
 
+/* Underline Effect */
 .h1-highlight {
     color: #D63031;
     background-repeat: repeat-x;
@@ -147,6 +168,7 @@ nav p {
     background-size: contain;
 }
 
+/* Background Details */
 #bg-big {
     position: absolute;
     right: 0;
@@ -160,4 +182,86 @@ nav p {
     right: 0;
     top: 114px;
     z-index: -1;
+}
+
+
+/* Grid of Photos */
+.body {
+    width: 100%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 16px;
+    margin: 50px;
+    aspect-ratio: 4 / 3;
+}
+
+/* Edited to fit the height of text */
+.div1 {
+    grid-column: span 2 / span 2;
+    /* grid-row: span 2 / span 2; */
+}
+
+/* Edited to span further down */
+.div2 {
+    grid-column: span 2 / span 2;
+    grid-row: span 5 / span 4;
+    grid-column-start: 1;
+    /* grid-row-start: 3; */
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 7;
+}
+
+.div4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.div5 {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 5;
+}
+
+.div6 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-column-start: 5;
+    grid-row-start: 5;
+}
+
+.div7 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 6;
+    grid-row-start: 2;
+}
+
+.div8 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 6;
+    grid-row-start: 3;
+}
+
+.div9 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 3;
+}
+
+.div10 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 7;
+    grid-row-start: 5;
 }
