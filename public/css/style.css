@@ -145,7 +145,7 @@ nav p {
 .section-box {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
 }
 
 /* Main Body Section? */
