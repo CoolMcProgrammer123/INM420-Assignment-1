@@ -2,7 +2,7 @@
 
 /* Debug Outlines */
 * {
-    outline: 1px dashed rgba(255, 0, 0, 0.5);
+    outline: 1px dashed #ff000080;
 }
 
 /* Text Defaults */
@@ -33,6 +33,15 @@ h3 {
     line-height: 56px;
     letter-spacing: -1px;
     vertical-align: bottom;
+}
+
+h4 {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+    vertical-align: middle;
 }
 
 p {
@@ -141,14 +150,17 @@ nav p {
     color: #2D3436;
 }
 
-/* Main Body Section */
+/* Main Section */
 .section-box {
     display: flex;
     flex-direction: column;
     /* height: 500px; */
+    max-width: 1170px;
+    justify-self: center;
+    padding: 0 135px;
 }
 
-/* Main Body Section? */
+/* Hero Section */
 #combine-fine-images {
     margin: 80px auto;
     align-items: center;
@@ -199,7 +211,7 @@ nav p {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 30px;
-    margin: 64px;
+    margin-top: 64px;
     aspect-ratio: 4 / 3;
 }
 
@@ -299,7 +311,7 @@ nav p {
     background-image: url(../assets/raster/Consider.png);
     background-size: cover;
     background-position: center;
-    
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -370,4 +382,66 @@ nav p {
     background-image: url(../assets/raster/Window.png);
     background-size: cover;
     background-position: center;
+}
+
+#delivering {
+    display: flex;
+    /* padding: 135px; */
+    /* padding: 80px 135px; */
+}
+
+.delivering-p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.25px;
+    vertical-align: middle;
+}
+
+.delivering-articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.delivering-articles article {
+    height: 100%;
+}
+
+.article-header {
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.25px;
+    vertical-align: middle;
+    margin-top: 24px;
+}
+
+.article-p {
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    margin: 16px 0;
+}
+
+.article-button {
+    border: 1px solid #ADADAD;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background: none;
+    margin-top: auto;
+
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    vertical-align: middle;
+    color: #6C5CE7;
 }
