@@ -667,6 +667,15 @@ nav p {
 /* Footer Layout */
 footer {
     display: flex;
-    flex-direction: column;
     width: 100%;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-row {
+    display: flex;
+    flex-direction: row;
 }
