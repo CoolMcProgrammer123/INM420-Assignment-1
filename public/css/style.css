@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+
 /* Debug Outlines */
 * {
     outline: 1px dashed #ff000080;
 }
 
-/* Text Defaults */
+
+/* Text Defaults for Headings and Paragraphs */
 h1 {
     font-family: Inter;
     font-weight: 800;
@@ -53,6 +55,7 @@ p {
     color: #2D3436;
 }
 
+
 body {
     background-color: white;
     font-family: "Inter", sans-serif;
@@ -60,7 +63,8 @@ body {
     color: #2D3436;
 }
 
-/* Header */
+
+/* Header Section Layout */
 header {
     display: flex;
     align-items: center;
@@ -73,7 +77,8 @@ header {
     box-shadow: 0px 4px 8px 0px #26323814, 0px 2px 4px 0px #26323829;
 }
 
-/* Website Logo */
+
+/* Website Logo Container */
 header div {
     display: flex;
     align-items: center;
@@ -82,7 +87,8 @@ header div {
     padding: 0 18px;
 }
 
-/* Sign In Button */
+
+/* Sign In Button Styles */
 header button {
     border: none;
     width: 170px;
@@ -104,7 +110,8 @@ header button p {
     text-shadow: 0px 4px 8px #26323814, 0px 2px 4px #26323829;
 }
 
-/* Nav Bar */
+
+/* Navigation Bar Container */
 header nav {
     display: flex;
     align-items: center;
@@ -112,7 +119,8 @@ header nav {
     height: 64px;
 }
 
-/* Nav links */
+
+/* Nav Links Styles */
 nav a {
     text-decoration: none;
     font-family: Inter;
@@ -126,7 +134,8 @@ nav a {
     width: 150px;
 }
 
-/* Decorative dots in nav bar */
+
+/* Decorative Dots in Nav Bar */
 nav p {
     font-family: Inter;
     font-weight: 700;
@@ -139,7 +148,8 @@ nav p {
     user-select: none;
 }
 
-/* Class for highlighting nav bar text */
+
+/* Highlighted Nav Text */
 .section-focused-text {
     font-family: Inter;
     font-weight: 700;
@@ -151,7 +161,8 @@ nav p {
     color: #2D3436;
 }
 
-/* Main Section */
+
+/* Main Section Wrapper */
 .section-box {
     display: flex;
     flex-direction: column;
@@ -161,7 +172,8 @@ nav p {
     padding: 0 135px;
 }
 
-/* Hero Section */
+
+/* Hero Section Container */
 #combine-fine-images {
     margin: 80px auto;
     align-items: center;
@@ -174,7 +186,8 @@ nav p {
     text-shadow: 0px 4px 0px #FFFFFF;
 }
 
-/* Underline Effect */
+
+/* Underline Highlight Effect */
 .h1-highlight {
     color: #D63031;
     background-repeat: repeat-x;
@@ -183,7 +196,8 @@ nav p {
     background-size: contain;
 }
 
-/* Background Details */
+
+/* Background Decorative Elements */
 #bg-big {
     position: absolute;
     right: 0;
@@ -200,7 +214,7 @@ nav p {
 }
 
 
-/* Grid of Photos */
+/* Grid of Photos Layout */
 .body {
     width: 100%;
     max-width: 1200px;
@@ -221,7 +235,8 @@ nav p {
     padding: 16px;
 }
 
-/* Edited to fit the height of text */
+
+/* Edited to Fit Height of Text */
 .div1 {
     grid-column: span 3 / span 3;
     /* grid-row: span 2 / span 2; */
@@ -229,7 +244,8 @@ nav p {
     padding: 0 !important;
 }
 
-/* Edited to span further down */
+
+/* Edited to Span Further Down */
 .div2 {
     grid-column: span 3 / span 3;
     grid-row: span 7 / span 7;
@@ -242,6 +258,8 @@ nav p {
     padding-top: 32px !important;
 }
 
+
+/* Grid Header Text Styles */
 .grid-header {
     font-family: Inter;
     font-weight: 700;
@@ -252,6 +270,8 @@ nav p {
     color: white;
 }
 
+
+/* Grid Subheader Text Styles */
 .grid-subheader {
     font-family: Inter;
     font-weight: 400;
@@ -262,6 +282,8 @@ nav p {
     color: white;
 }
 
+
+/* Grid Title Text Styles */
 .grid-title {
     font-family: Inter;
     font-weight: 700;
@@ -282,6 +304,8 @@ nav p {
     padding: 0 !important;
 }
 
+
+/* Button in Div3 */
 .div3 button {
     border: none;
     width: 100%;
@@ -303,6 +327,8 @@ nav p {
     text-shadow: 0px 4px 8px #26323814, 0px 2px 4px #26323829;
 }
 
+
+/* Div4 Background and Layout */
 .div4 {
     grid-column: span 5 / span 5;
     grid-row: span 5 / span 5;
@@ -318,6 +344,7 @@ nav p {
     justify-content: flex-end;
 }
 
+/* Div5 Background Image */
 .div5 {
     grid-column: span 3 / span 3;
     grid-row: span 4 / span 4;
@@ -329,6 +356,7 @@ nav p {
     background-position: center;
 }
 
+/* Div6 Background and Layout */
 .div6 {
     grid-column: span 4 / span 4;
     grid-row: span 5 / span 5;
@@ -344,6 +372,7 @@ nav p {
     justify-content: flex-start;
 }
 
+/* Div7 Positioning and Padding */
 .div7 {
     grid-column: span 4 / span 4;
     grid-column-start: 9;
@@ -352,6 +381,7 @@ nav p {
     padding: 0 !important;
 }
 
+/* Div8 Background Image */
 .div8 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -363,6 +393,7 @@ nav p {
     background-position: center;
 }
 
+/* Div9 Background Image */
 .div9 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -374,6 +405,7 @@ nav p {
     background-position: center;
 }
 
+/* Div10 Background Image */
 .div10 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -385,6 +417,8 @@ nav p {
     background-position: center;
 }
 
+
+/* Delivering Section Container */
 #delivering {
     display: flex;
     padding-bottom: 80px;
@@ -392,6 +426,7 @@ nav p {
     /* padding: 80px 135px; */
 }
 
+/* Delivering Paragraph Text Styles */
 .delivering-p {
     font-family: Inter;
     font-weight: 400;
@@ -401,6 +436,7 @@ nav p {
     vertical-align: middle;
 }
 
+/* Grid of Articles in Delivering */
 .delivering-articles {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -408,10 +444,12 @@ nav p {
     margin-top: 40px;
 }
 
+/* Individual Article Container */
 .delivering-articles article {
     height: 100%;
 }
 
+/* Article Header Text Styles */
 .article-header {
     font-family: Inter;
     font-weight: 700;
@@ -422,6 +460,7 @@ nav p {
     margin-top: 24px;
 }
 
+/* Article Body Copy Styles */
 .article-p {
     font-family: Inter;
     font-weight: 400;
@@ -431,6 +470,7 @@ nav p {
     margin: 16px 0;
 }
 
+/* Article Button Styles */
 .article-button {
     border: 1px solid #ADADAD;
     padding: 8px 16px;
@@ -448,18 +488,21 @@ nav p {
     color: #6C5CE7;
 }
 
+/* Pricing Section Container */
 #pricing {
     /* margin: 80px 0; */
     display: flex;
     width: 100%;
 }
 
+/* Pricing Section Subtitle */
 #pricing h4 {
     text-align: center;
     margin-top: 34px;
     color: #ADADAD;
 }
 
+/* Highlight Underline for Pricing Subtitle */
 .h4-highlight {
     color: #6C5CE7;
     background-repeat: repeat-x;
@@ -468,6 +511,7 @@ nav p {
     background-size: contain;
 }
 
+/* Grid of Pricing Cards */
 .pricing-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -475,6 +519,7 @@ nav p {
     gap: 30px;
 }
 
+/* Individual Pricing Card Container */
 .pricing-cards article {
     display: flex;
     flex-direction: column;
@@ -484,10 +529,12 @@ nav p {
     background-color: white;
 }
 
+/* Emphasis for Best Plan Card */
 .best {
     box-shadow: 0px 16px 24px 0px #26323814, 0px 8px 8px 0px #2632381F;
 }
 
+/* Best Plan Header Layout */
 .best-header {
     display: flex;
     flex-direction: row !important;
@@ -495,6 +542,7 @@ nav p {
     align-items: center;
 }
 
+/* Badge in Best Plan Header */
 .best-header span {
     border: 1px solid #6C5CE7;
     padding: 8px 16px;
@@ -511,12 +559,14 @@ nav p {
     text-transform: uppercase;
 }
 
+/* Column of Details in Pricing Card */
 .pricing-cards div {
     display: flex;
     flex-direction: column;
     gap: 26px;
 }
 
+/* Pricing Plan Name Text */
 .pricing-plan {
     font-family: Inter;
     font-weight: 700;
@@ -527,6 +577,7 @@ nav p {
     color: #6C5CE7;
 }
 
+/* Price Display Text */
 .pricing-price {
     font-family: Inter;
     font-weight: 700;
@@ -536,6 +587,7 @@ nav p {
     vertical-align: middle;
 }
 
+/* Price Unit Text */
 .pricing-price span {
     font-family: Inter;
     font-weight: 800;
@@ -546,6 +598,7 @@ nav p {
     text-transform: uppercase;
 }
 
+/* Button in Pricing Card */
 .pricing-cards button {
     border: 1px solid #ADADAD;
     padding: 14px 16px;
@@ -562,6 +615,7 @@ nav p {
     color: #6C5CE7;
 }
 
+/* Call to Action Button in Best Plan */
 .best button {
     background-color: #6C5CE7;
     color: white;
@@ -576,6 +630,7 @@ nav p {
     vertical-align: middle;
 }
 
+/* List of Features in Pricing Card */
 .pricing-cards ul {
     display: flex;
     flex-direction: column;
@@ -583,6 +638,7 @@ nav p {
     margin-bottom: 16px;
 }
 
+/* Individual Feature Item */
 .pricing-cards li {
     display: flex;
     flex-direction: row;
@@ -599,10 +655,18 @@ nav p {
     vertical-align: middle;
 }
 
+/* Decorative SVG Positioning */
 #pricing svg {
     position: relative;
-    bottom: 90px;
+    bottom: 96px;
     left: 370px;
 
     z-index: -1;
+}
+
+/* Footer Layout */
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
