@@ -835,24 +835,26 @@ footer h4 {
 }
 
 .wave {
-  position: relative;       /* so left/transform apply in page flow */
-  width: 100vw;             /* exactly viewport width */
-  left: 50%;                /* shift its left edge to center point */
-  transform: translateX(-50%); /* recenter a 100vw-wide element */
-  margin-top: -1px;         /* optional: remove tiny gap if any */
-  overflow: hidden;         /* hide any SVG overflow */
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: -1px;
+    overflow: hidden;
 }
 
-/* stretch the SVG to exactly fill that container */
 .wave svg {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-/* optional: avoid a horizontal scrollbar from 100vw */
 body {
-  overflow-x: hidden;
+    overflow-x: hidden;
+}
+
+.sorry {
+    display: none;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -860,8 +862,61 @@ body {
         display: none;
     }
 
+    h1 {
+        font-family: Inter;
+        font-weight: 900;
+        font-size: 64px;
+        line-height: 100%;
+        letter-spacing: -1px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    h2 {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.25px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .section-box {
+        padding: 0;
+        margin: 0 50px;
+    }
+
     .pricing-cards {
         grid-template-columns: 1fr;
+        margin: 0 50px;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+    .pricing-cards article {
+        box-shadow: 0px 4px 8px 0px #26323814,0px 2px 4px 0px #26323829;
+
+    }
+
+    #pricing h2 {
+        font-family: Inter;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        letter-spacing: -0.5px;
+        vertical-align: middle;
+    }
+
+    #pricing h4 {
+        font-family: Inter;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: -0.25px;
+        vertical-align: middle;
+
+        margin-top: 5px;
     }
 
     #pricing svg {
@@ -870,9 +925,21 @@ body {
 
     .footer-whole {
         grid-template-columns: 1fr;
+        margin: 0 50px;
     }
 
     .footer-div4 {
         display: none;
+    }
+
+    .body {
+        display: none;
+    }
+
+    .sorry {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
     }
 }
