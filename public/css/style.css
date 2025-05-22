@@ -821,6 +821,8 @@ footer h4 {
     line-height: 32px;
     letter-spacing: 0px;
     vertical-align: middle;
+
+    resize: none;
 }
 
 .input-group textarea::placeholder {
